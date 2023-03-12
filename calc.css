@@ -1,0 +1,29 @@
+#contour{
+    background-color: grey;
+    border-color: black;
+    border-radius: 10px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#result{
+    border-color:black;
+    background-color: lightblue;
+}
+
+#write{
+    background-color: white;
+}
+
+#egal{
+    background-color: lightgreen;
+    float:right;
+    width:50px
+}
+
+.first{
+    margin-left: 5px;
+    width: 35px;
+    margin-bottom: 5px;
+}
