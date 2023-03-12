@@ -24,6 +24,10 @@
 
 .first{
     margin-left: 5px;
-    width: 35px;
+    width: 30px;
     margin-bottom: 5px;
+}
+
+.button{
+    width:30px;
 }
