@@ -31,3 +31,8 @@
 .button{
     width:30px;
 }
+
+h1{
+    font-weight: bold;
+    color: white;
+}
