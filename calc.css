@@ -10,6 +10,7 @@
 #result{
     border-color:black;
     background-color: lightblue;
+    border-width: 10px;
 }
 
 #write{
