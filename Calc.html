@@ -2,47 +2,49 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="calc.css">
+        <script src="Calc.js"></script>
     </head>
     <body>
         <main>
             <div id="contour"> <!-- Contour calc -->
                 <div>
-                    <h1>Calculette Saperlipopette</h1>
+                    <h1>Chouette Calculette</h1>
                 </div>
-                <div id="result"> <!-- Div du résultat -->
-                    <p> Test</p>
+                <div id="result"> 
+                    <!-- Div du résultat -->
+                    <p id="solution"></p>
                 </div>
                 <div id="write">
                     <!-- Div de la zone d'écriture -->
-                    <p> Zone d'écriture</p>
+                    <p id="zone"></p>
                 </div>
                 <div><!-- Div de la zone des boutons -->
                     <!-- 1ère ligne -->
-                    <button class="first">7</button>
-                    <button class="button">8</button>
-                    <button class="button">9</button>
-                    <button class="button">÷</button>
-                    <button>C</button>
+                    <button class="first" onclick="affiche(7)">7</button>
+                    <button class="button" onclick="affiche(8)">8</button>
+                    <button class="button" onclick="affiche(9)">9</button>
+                    <button class="button" onclick="affiche('/')">&divide;</button>
+                    <button class="end" onclick="supprime()">C</button>
                     <br>
                     <!-- 2e ligne -->
-                    <button class="first">4</button>
-                    <button class="button">5</button>
-                    <button class="button">6</button>
-                    <button class="button">X</button>
-                    <button class="button">(</button>
-                    <button>)</button>
+                    <button class="first" onclick="affiche(4)">4</button>
+                    <button class="button" onclick="affiche(5)">5</button>
+                    <button class="button" onclick="affiche(6)">6</button>
+                    <button class="button" onclick="affiche('*')">&times;</button>
+                    <button class="button" onclick="affiche('(')">(</button>
+                    <button class="end" onclick="affiche(')')">)</button>
                     <br>
                     <!-- 3e ligne -->
-                    <button class="first">1</button>
-                    <button class="button">2</button>
-                    <button class="button">3</button>
-                    <button class="button">-</button>
+                    <button class="first" onclick="affiche(1)">1</button>
+                    <button class="button" onclick="affiche(2)">2</button>
+                    <button class="button" onclick="affiche(3)">3</button>
+                    <button class="button" onclick="affiche('-')">-</button>
                     <br>
                     <!-- 4e ligne -->
-                    <button class="first">0</button>
-                    <button class="button">,</button>
-                    <button class="button">+</button>
-                    <button id="egal">=</button>
+                    <button class="first" onclick="affiche(0)">0</button>
+                    <button class="button" onclick="affiche('.')">,</button>
+                    <button class="button" onclick="affiche('+')">+</button>
+                    <button id="egal" onclick="result()">=</button>
                     </div>
                 </div>
             </div>
