@@ -5,7 +5,7 @@
         <script src="Calc.js"></script>
     </head>
     <body>
-        
+
         <header>
             <h1> La chouette calculette</h1>
         </header>
@@ -25,6 +25,7 @@
                     <button class="button" onclick="calculator.affiche(8)">8</button>
                     <button class="button" onclick="calculator.affiche(9)">9</button>
                     <button class="button" onclick="calculator.affiche('/')">&divide;</button>
+                    <button class="button" onclick="calculator.affiche('+')">+</button>
                     <button class="end" onclick="calculator.supprime()">C</button>
                     <br>
                     <!-- 2e ligne -->
@@ -45,7 +46,6 @@
                     <!-- 4e ligne -->
                     <button class="first" onclick="calculator.affiche(0)">0</button>
                     <button class="button" onclick="calculator.affiche('.')">,</button>
-                    <button class="button" onclick="calculator.affiche('+')">+</button>
                     <button class="button" id="rep" onclick="calculator.save()">Rep</button>
                     <button id="egal" class="end" onclick="calculator.result()">=</button>
                     </div>

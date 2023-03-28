@@ -4,7 +4,7 @@ function affiche(number){
 
 function supprime(){
     document.getElementById("zone").innerText=" ";
-    
+
 }
 
 function result(){
@@ -71,6 +71,7 @@ class BaseCalculator{
     }
     save(){
         document.getElementById("zone").innerText += this.resultat;
+        this.actions.push(this.resultat);
     }
 }
 
