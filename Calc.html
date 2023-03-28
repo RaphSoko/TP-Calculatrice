@@ -5,11 +5,11 @@
         <script src="Calc.js"></script>
     </head>
     <body>
+        <header>
+            <h1> La chouette calculette</h1>
+        </header>
         <main>
             <div id="contour"> <!-- Contour calc -->
-                <div>
-                    <h1>Chouette Calculette</h1>
-                </div>
                 <div id="result"> 
                     <!-- Div du résultat -->
                     <p id="solution"></p>
@@ -20,31 +20,33 @@
                 </div>
                 <div><!-- Div de la zone des boutons -->
                     <!-- 1ère ligne -->
-                    <button class="first" onclick="affiche(7)">7</button>
-                    <button class="button" onclick="affiche(8)">8</button>
-                    <button class="button" onclick="affiche(9)">9</button>
-                    <button class="button" onclick="affiche('/')">&divide;</button>
-                    <button class="end" onclick="supprime()">C</button>
+                    <button class="first" onclick="calculator.affiche(7)">7</button>
+                    <button class="button" onclick="calculator.affiche(8)">8</button>
+                    <button class="button" onclick="calculator.affiche(9)">9</button>
+                    <button class="button" onclick="calculator.affiche('/')">&divide;</button>
+                    <button class="end" onclick="calculator.supprime()">C</button>
                     <br>
                     <!-- 2e ligne -->
-                    <button class="first" onclick="affiche(4)">4</button>
-                    <button class="button" onclick="affiche(5)">5</button>
-                    <button class="button" onclick="affiche(6)">6</button>
-                    <button class="button" onclick="affiche('*')">&times;</button>
-                    <button class="button" onclick="affiche('(')">(</button>
-                    <button class="end" onclick="affiche(')')">)</button>
+                    <button class="first" onclick="calculator.affiche(4)">4</button>
+                    <button class="button" onclick="calculator.affiche(5)">5</button>
+                    <button class="button" onclick="calculator.affiche(6)">6</button>
+                    <button class="button" onclick="calculator.affiche('*')">&times;</button>
+                    <button class="button" onclick="calculator.affiche('(')">(</button>
+                    <button class="end" onclick="calculator.affiche(')')">)</button>
                     <br>
                     <!-- 3e ligne -->
-                    <button class="first" onclick="affiche(1)">1</button>
-                    <button class="button" onclick="affiche(2)">2</button>
-                    <button class="button" onclick="affiche(3)">3</button>
-                    <button class="button" onclick="affiche('-')">-</button>
+                    <button class="first" onclick="calculator.affiche(1)">1</button>
+                    <button class="button" onclick="calculator.affiche(2)">2</button>
+                    <button class="button" onclick="calculator.affiche(3)">3</button>
+                    <button class="button" onclick="calculator.affiche('-')">-</button>
+                    <button class="end" id="back" onclick="calculator.back()">Suppr</button>
                     <br>
                     <!-- 4e ligne -->
-                    <button class="first" onclick="affiche(0)">0</button>
-                    <button class="button" onclick="affiche('.')">,</button>
-                    <button class="button" onclick="affiche('+')">+</button>
-                    <button id="egal" onclick="result()">=</button>
+                    <button class="first" onclick="calculator.affiche(0)">0</button>
+                    <button class="button" onclick="calculator.affiche('.')">,</button>
+                    <button class="button" onclick="calculator.affiche('+')">+</button>
+                    <button class="button" id="rep" onclick="calculator.save()">Rep</button>
+                    <button id="egal" class="end" onclick="calculator.result()">=</button>
                     </div>
                 </div>
             </div>

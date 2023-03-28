@@ -1,3 +1,21 @@
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+header{
+    background-color: rgba(0,0,0,0.65);
+    height:50px;
+    margin-top:0%;
+
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
 #contour{
     background-color: grey;
     border-color: black;
@@ -5,8 +23,10 @@
     border-width: 5px;
     border-radius: 10px;
     width: 210px;
-    margin-left: 50px;
-    margin-top: 50px;
+    height:300px;
+    margin-left: 500px;
+    margin-top: 180px;
+    padding-top: 10px;
 }
 
 #result{
@@ -15,6 +35,11 @@
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
+    height: 50px ;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    justify-content: right;
 }
 
 #write{
@@ -22,6 +47,10 @@
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
 }
 
 #egal{
@@ -30,6 +59,7 @@
     margin-right: 5px;
     width:50px;
     border-radius: 10px;
+    height:40px;
 }
 
 #egal:hover{
@@ -37,8 +67,10 @@
 }
 
 .first{
+    margin-top:5px;
     margin-left: 5px;
     width: 30px;
+    height:40px;
     margin-bottom: 5px;
     border-radius: 10px;
 }
@@ -49,7 +81,9 @@
 
 .button{
     width:30px;
+    margin-top: 5px;
     border-radius: 10px;
+    height:40px;
 }
 
 .button:hover{
@@ -58,7 +92,9 @@
 
 .end{
     width: 30px;
+    margin-top:5px;
     border-radius: 10px;
+    height:40px;
 }
 
 .end:hover{
@@ -68,4 +104,21 @@
 h1{
     font-weight: bold;
     color: white;
+}
+
+#back{
+    width:50px;
+    float:right;
+    background-color: crimson;
+    margin-right: 5px;
+
+}
+
+#back:hover{
+    background-color: darkred;
+}
+
+#rep{
+    width: 40px;
+    background-color: gold;
 }
