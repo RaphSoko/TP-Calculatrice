@@ -4,6 +4,7 @@ function affiche(number){
 
 function supprime(){
     document.getElementById("zone").innerText=" ";
+    
 }
 
 function result(){
